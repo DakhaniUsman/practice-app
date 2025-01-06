@@ -17,7 +17,11 @@ const Home = () => {
   }
 
   function DynamicRoutingPage() {
-    router("/dynamic-routing/:productId");
+    router("/dynamic-routing/111");
+  }
+
+  function PropDrillingPage() {
+    router("/prop-drilling");
   }
 
   return (
@@ -38,6 +42,10 @@ const Home = () => {
 
       <button className="btn" onClick={DynamicRoutingPage}>
         Dynamic Routing
+      </button>
+
+      <button className="btn" onClick={PropDrillingPage}>
+        Prop Drilling
       </button>
     </div>
   );
