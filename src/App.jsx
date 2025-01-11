@@ -107,7 +107,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/context-counter" element={<ContextCounter />} />
-        <Route path="/use-state-counter" element={<UseStateCounter />} />
+        <Route path="/use-state-counter" element={<UseStateCounter pokemons={pokemons}/>} />
         <Route path="/use-state-two" element={<UseStateTwo />} />
         <Route path="use-effect-counter" element={<UseEffectCounter />} />
         <Route

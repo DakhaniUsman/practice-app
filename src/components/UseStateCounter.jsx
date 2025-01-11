@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const UseStateCounter = () => {
+const UseStateCounter = ({ pokemons }) => {
   const router = useNavigate();
 
   const [counter, setCounter] = useState(0);
@@ -40,6 +40,40 @@ const UseStateCounter = () => {
       <button className="btn" onClick={DynamicRoutingPage}>
         Dynamic Routing
       </button>
+
+      {/* <div
+        className="pokedex"
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "auto",
+          display: "flex",
+          flexWrap: "wrap",
+          marginBottom: "2em",
+        }}
+      >
+        {pokemons.map((pokemon) => (
+          <div
+            className="pokemon-card"
+            style={{
+              position: "relative",
+              minWidth: "22%",
+              width : "300px",
+              height: "auto",
+              margin: "auto",
+              borderRadius: "10px",
+              margin: "10px auto",
+              boxShadow: "0px 0px 10px #aaa",
+            }}
+          >
+            <h1>{pokemon.name}</h1>
+            <img src={pokemon.image} alt="" />
+            
+            <p>{pokemon.type}
+            </p>
+          </div>
+        ))}
+      </div> */}
     </div>
   );
 };
