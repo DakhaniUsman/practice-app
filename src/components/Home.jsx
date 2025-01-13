@@ -24,6 +24,10 @@ const Home = () => {
     router("/prop-drilling");
   }
 
+  function FakeProductsApiPage() {
+    router("/fake-products-api")
+  }
+
   return (
     <div>
       <h1 className="heading">Welcome to Home Page</h1>
@@ -46,6 +50,10 @@ const Home = () => {
 
       <button className="btn" onClick={PropDrillingPage}>
         Prop Drilling
+      </button>
+
+      <button className="btn" onClick={FakeProductsApiPage}>
+        Fake Products Api
       </button>
     </div>
   );

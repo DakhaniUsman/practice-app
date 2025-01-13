@@ -10,6 +10,7 @@ import UseStateTwo from "./components/UseStateTwo";
 import DynamicRouting from "./components/DynamicRouting";
 import PropDrilling from "./components/PropDrilling";
 import { useState } from "react";
+import FakeProductsApi from "./components/FakeProductsApi";
 
 function App() {
   const [students, setStudents] = useState(["Zeek", "Eren", "Mikasa", "Armin"]);
@@ -118,6 +119,7 @@ function App() {
           path="/prop-drilling"
           element={<PropDrilling students={students} pokemons={pokemons} />}
         />
+        <Route path="/fake-products-api" element={<FakeProductsApi/>} /> 
       </Routes>
     </div>
   );
