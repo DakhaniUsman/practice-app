@@ -11,6 +11,7 @@ import DynamicRouting from "./components/DynamicRouting";
 import PropDrilling from "./components/PropDrilling";
 import { useState } from "react";
 import FakeProductsApi from "./components/FakeProductsApi";
+import SingleFakeProduct from "./components/SingleFakeProduct";
 
 function App() {
   const [students, setStudents] = useState(["Zeek", "Eren", "Mikasa", "Armin"]);
@@ -108,7 +109,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/context-counter" element={<ContextCounter />} />
-        <Route path="/use-state-counter" element={<UseStateCounter pokemons={pokemons}/>} />
+        <Route
+          path="/use-state-counter"
+          element={<UseStateCounter pokemons={pokemons} />}
+        />
         <Route path="/use-state-two" element={<UseStateTwo />} />
         <Route path="use-effect-counter" element={<UseEffectCounter />} />
         <Route
@@ -119,7 +123,8 @@ function App() {
           path="/prop-drilling"
           element={<PropDrilling students={students} pokemons={pokemons} />}
         />
-        <Route path="/fake-products-api" element={<FakeProductsApi/>} /> 
+        <Route path="/fake-products-api" element={<FakeProductsApi />} />
+        <Route path="single-fake-product/:productId" element={<SingleFakeProduct />} />
       </Routes>
     </div>
   );
