@@ -101,6 +101,83 @@ function App() {
       name: "Buterfree",
       type: "Bug Flying",
     },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/013.png",
+      id: "#0013",
+      name: "Weedle",
+      type: "Bug Poison",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/014.png",
+      id: "#0014",
+      name: "Kakuna",
+      type: "Bug Poison",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/015.png",
+      id: "#0015",
+      name: "Beedrill",
+      type: "Bug Poison",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/016.png",
+      id: "#0016",
+      name: "Pidgey",
+      type: "Normal Flying",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/017.png",
+      id: "#0017",
+      name: "Pidgeoto",
+      type: "Normal Flying",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/018.png",
+      id: "#0018",
+      name: "Pidgeot",
+      type: "Normal Flying",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/019.png",
+      id: "#0019",
+      name: "Ratata",
+      type: "Normal",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/020.png",
+      id: "#0020",
+      name: "Raticate",
+      type: "Normal",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/658.png",
+      id: "#0658",
+      name: "Greyninja",
+      type: "Dark Water",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/493.png",
+      id: "#0493",
+      name: "Archeus",
+      type: "Normal",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/890.png",
+      id: "#890",
+      name: "Eternatus",
+      type: "Dark",
+    },
   ]);
 
   return (
@@ -124,7 +201,10 @@ function App() {
           element={<PropDrilling students={students} pokemons={pokemons} />}
         />
         <Route path="/fake-products-api" element={<FakeProductsApi />} />
-        <Route path="single-fake-product/:productId" element={<SingleFakeProduct />} />
+        <Route
+          path="single-fake-product/:productId"
+          element={<SingleFakeProduct />}
+        />
       </Routes>
     </div>
   );
