@@ -174,9 +174,16 @@ function App() {
     {
       image:
         "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/890.png",
-      id: "#890",
+      id: "#0890",
       name: "Eternatus",
       type: "Dark",
+    },
+    {
+      image:
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/025.png",
+      id: "#0172",
+      name: "Pichu",
+      type: "Electric",
     },
   ]);
 
